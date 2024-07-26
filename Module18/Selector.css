@@ -1,0 +1,19 @@
+/*Descendent Selector*/
+main p{
+    color: yellow;
+}
+
+/*Child Selector*/
+h1 > p{
+    color: purple;
+}
+
+/*Adjacent sibling*/
+section + p{
+    color: blue;
+}
+
+/*General Sibling*/
+aside ~ span{
+    color: rgb(197, 29, 57);
+}
