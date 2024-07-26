@@ -17,3 +17,13 @@ section + p{
 aside ~ span{
     color: rgb(197, 29, 57);
 }
+
+/*Atribute Selector*/
+[target="_blank"]{
+    text-decoration: none;
+    color: yellowgreen;
+}
+
+[alt~= "pw1"]{
+ color: rgb(14, 203, 232);
+}
