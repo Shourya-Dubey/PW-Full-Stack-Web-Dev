@@ -1,0 +1,29 @@
+/*Universal Selector*/
+*{
+    font-size: 30px;
+    color: chartreuse;
+}
+
+/*Class Selector*/
+.para{
+    background-color: aquamarine;
+}
+.text{
+    color: chocolate;
+}
+
+/*ID Selector*/
+#heading{
+    text-align: center;
+    text-decoration: underline;
+}
+
+/*Element Selector*/
+h2{
+    text-decoration: underline;
+}
+
+/*Selector List*/
+.s, .d, .h{
+    color: blue;
+}
