@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        p::first-line{
+            color: palevioletred;
+        }
+        .p2::first-letter{
+            color: black;
+        }
+        .p2::after{
+            content: "Dubey";
+            color: green;
+        }
+        .p2::before{
+            content: "Shourya";
+            color: green;
+        }
+        span::selection{
+            background-color: black;
+            color: yellow;
+        }
+        ul li::marker{
+            content: "+  ";
+            color: rgb(243, 148, 5);
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta doloribus ipsam vel libero ducimus? Nisi quod sed officia consequatur illum!</p>
+    <hr>
+    <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, dolor.</p>
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, minus fuga? Error earum perspiciatis quaerat? Aperiam eveniet ullam voluptatibus ipsa!</span>
+    <hr>
+    <ul>
+        <li>Monday</li>
+        <li>Tuesday</li>
+        <li>Wednesday</li>
+        <li>Thrusday</li>
+    </ul>
+
+</body>
+</html>
