@@ -1,0 +1,41 @@
+body{
+    background-color: brown;
+}
+div{
+    text-align: center;
+    font-size: x-large;
+}
+div::after{
+    content: "Welcome to Demo";
+}
+
+@media(min-width:200px) and (max-width:500px){
+    body{
+        background-color: white;
+    }
+    div::after{
+        content: "It's Small";
+    }
+}
+ 
+@media(min-width: 500px){
+   body{
+    background-color: green;
+   }
+   div::after{
+    content: "it's Working";
+    color: yellow;
+   }
+}
+
+/* @media(500 <= width <= 700){
+    body{
+        background-color: violet;
+    }
+} */
+
+@media(min-width: 700px){
+    body{
+      background-color: aquamarine;  
+    }
+}
