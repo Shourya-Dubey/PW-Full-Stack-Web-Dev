@@ -1,0 +1,59 @@
+div{
+    text-align: center;
+    font-size: x-large;
+}
+
+@media(max-width:200px){
+    body{
+         background-color: black;
+    }
+    div::after{
+        content: "Very Small";
+        color: white;
+    }
+}
+
+@media (200px <= width <= 300px){
+    body{
+        background-color: greenyellow;
+    }
+    div::after{
+        content: "Mobile Phone";
+    }
+}
+
+@media(300px <= width <= 500px){
+    body{
+        background-color: aquamarine;
+    }
+    div::after{
+        content: "Portret Tablet and large Phone";
+    }
+}
+
+@media(500px <= width <= 650px){
+    body{
+        background-color: violet;
+    }
+    div::after{
+        content: "Tablet";
+    }
+}
+
+@media(650px <= width <= 782px){
+    body{
+        background-color: blueviolet;
+    }
+    div::after{
+        content: "Laptop";
+    }
+}
+
+@media(782px <= width <= 1200px){
+    body{
+        background-color: tomato;
+    }
+    div::after{
+        content:"Larger Screen Device"
+    }
+}
