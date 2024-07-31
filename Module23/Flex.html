@@ -10,8 +10,11 @@
             height: 100%;
             border: 2px solid black;
             display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
+
+            /* flex-direction: column;
+            flex-wrap: wrap; */
+            flex-flow: column wrap;
+
             /* justify-content: center; */
             gap: 10px;
             align-items:center;
@@ -22,12 +25,21 @@
         }
         .div1{
             background-color: red;
+            order: 1;
+            flex-grow: 2;
         }
         .div2{
             background-color: yellowgreen;
+            order: 2;
+            /* flex-grow: 3;
+            flex-shrink: 2;
+            flex-basis: 200px; */
+            flex: 3 2 200px;
         }
         .div3{
             background-color: blueviolet;
+            order: 20;
+            align-self: flex-start;
         }
     </style>
 </head>
