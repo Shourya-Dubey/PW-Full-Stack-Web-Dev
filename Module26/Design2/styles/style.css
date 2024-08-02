@@ -47,21 +47,31 @@
 .hero-section>.left-section{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    /* gap: 20px; */
+    width: 40%;
 }
 .hero-section>.left-section>h1{
-    font-weight: 900;
-    font-size: xx-large;
+    font-size: 50px;
+}
+.hero-section>.left-section>p{
+    margin: 14px 0;
 }
 .hero-section>.left-section>button{
     width: fit-content;
     padding: 6px 10px;
-    background-color: rgb(2, 97, 2);
+    background-color:#3b855b;
     font-weight: bold;
     color: white;
     border: 1px solid white;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
+    transition-duration: 0.8s;
+}
+.hero-section>.left-section>button:hover{
+    background-color: #f9f5ed;
+    color: #3b855b;
+    scale: 1.1;
+    box-shadow: 2px 4px #3b855b;
 }
 .right-section>.top-img{
     display: flex;
