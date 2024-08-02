@@ -7,19 +7,20 @@
     font-style: normal;
     background-color: #f9f5ed;
 }
-.container{
+/* .container{
     margin: 0 auto;
-}
+} */
 .header-nav{
     /* width: 100vw; */
     display: flex;
-    justify-content: start;
-    justify-content: space-around;
-    padding-top: 17px;
+    /* justify-content: center; */
+    align-items: center;
+    /* justify-content: space-around; */
+    padding: 18px 140px;
 }
 .header-nav>ul{
     display: flex;
-    justify-content: start;
+    /* justify-content: start; */
     justify-content: space-between;
     gap: 20px;
 
