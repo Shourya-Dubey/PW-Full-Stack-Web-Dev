@@ -17,9 +17,20 @@
     justify-content: center;
     padding-top: 20px;
     justify-content: space-around;
+    align-items: center;
+}
+.header-section>.navlink{
+    display: flex;
+    gap: 40px;
 }
 .header-section>.navlink>a{
     text-decoration: none;
+    color: black;
+}
+
+/* not working */
+.header-section>.navlink>a:hover{
+    text-decoration: underline;
 }
 .header-section>.search-section{
     display: flex;
@@ -36,6 +47,7 @@
     color: white;
     border: 1px solid white;
     font-weight: 600;
+    cursor: pointer;
 }
 .hero-section{
     display: flex;
@@ -68,7 +80,7 @@
     align-items: center;
 }
 .hero-section>.right-context>i{
-    font-size:200px;
+    font-size:150px;
     margin-bottom: 10px;
 }
 .hero-section>.right-context>button{
@@ -78,6 +90,7 @@
     border: 1px solid white;
     padding: 4px 10px;
     font-weight: 600;
+    cursor: pointer;
 }
 .footer{
     display: flex;
