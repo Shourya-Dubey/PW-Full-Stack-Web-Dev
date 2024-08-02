@@ -79,6 +79,11 @@
     align-items: center;
     gap: 10px;
     padding-bottom: 13px;
+    transition: 0.8s;
+}
+.right-section>.top-img>img:first-child:hover{
+    scale: 1.05;
+    transition: 1s;
 }
 .right-section>.top-img>img{
     width: 150px;
