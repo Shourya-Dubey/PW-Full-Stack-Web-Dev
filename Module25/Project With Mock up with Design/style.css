@@ -5,74 +5,75 @@
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    /* width: 100%vw;
-    height: 100%vh; */
-        background-color: #dbd6df;
+    background-color: azure;
 }
-.main-section{
-    background-color: #dbd6df;
-    width: 100vw;
-    height: 100vh;
+.container{
+    margin: 0 auto;
 }
-.hero-heading > nav{
+.header-section{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 10px;
+    justify-content: center;
+    padding-top: 20px;
+    justify-content: space-around;
 }
-.hero-heading ul a{
+.header-section>.navlink>a{
     text-decoration: none;
-    color: black;
-    padding: 10px;
 }
-.Search-space{
+.header-section>.search-section{
     display: flex;
-    gap: 8px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
-.Search-space>input{
-    padding: 4px;
+.header-section>.search-section>input{
+    padding: 4px 10px;
 }
-.Search-space>button{
-    padding: 4px;
-    background-color:rgb(18, 155, 155);
+.header-section>.search-section>button{
+    padding: 4px 10px;
+    background-color: rgb(18, 155, 155);
     color: white;
-    /* border-color: rgb(18, 155, 155); */
-    border-radius: 4px;
+    border: 1px solid white;
+    font-weight: 600;
 }
 .hero-section{
     display: flex;
-    margin-top: 40px;
-    gap: 130px;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 30px;
+    justify-content: space-around;
 }
-.left-content>h1{
-    font-weight: 800;
-    font: bold;
+.header-section>.left-context{
+    width: 200px;
 }
-.left-content>h1>span{
+.hero-section>.left-context>h1{
+    font-weight: 700;
+}
+.hero-section>.left-context>h1>span{
     color: rgb(18, 155, 155);
     font-weight: 1000;
-    background-color:rgb(226, 232, 236);
-    padding: 5px;
+    background-color: rgb(229, 232, 235);
+    padding: 3px;
 }
-.left-content>p>span{
+.hero-section>.left-context>p>span{
     color: rgb(18, 155, 155);
+    font-weight: 800;
 }
-.right-content{
+.hero-section>.right-context{
     display: flex;
     flex-direction: column;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
 }
-.right-content>button{
+.hero-section>.right-context>i{
+    font-size:200px;
+    margin-bottom: 10px;
+}
+.hero-section>.right-context>button{
+    width: fit-content;
     background-color: rgb(18, 155, 155);
-    padding: 4px;
     color: white;
-    border-radius: 4px;
-}
-footer{
-    margin-top: 25px;
-    display: flex;
-    justify-content: space-evenly;
-}
-footer>ul{
-    display: flex;
-    gap: 20px;
+    border: 1px solid white;
+    padding: 4px 10px;
+    font-weight: 600;
 }
