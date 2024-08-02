@@ -80,9 +80,11 @@
     justify-content: center;
     align-items: center;
 }
-.hero-section>.right-context>i{
-    font-size:150px;
+.hero-section>.right-context>img{
+    /* font-size:150px;*/
     margin-bottom: 10px;
+    width: 150px;
+    height: 150px;
 }
 .hero-section>.right-context>button{
     width: fit-content;
