@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            display: none;
+        }
+        @media screen and (400px <= width <= 600px){
+           .box1{
+            display: block;
+            background-color: red;
+           }
+           .box::after{
+            content: "this is mobile Screen size Display";
+            width: 400px;
+            height: 400px;
+           }
+        }
+        @media screen and (700px <= width <= 930px){
+            .box2{
+                display: block;
+                background-color: yellowgreen;
+                width: 500px;
+                height: 500px;
+                position: relative;
+                top: 20px;
+                left: 80px;
+            }
+            .box2::after{
+                content: "This is table size Screen";
+            }
+        }
+        @media screen and (min-width: 1000px) and (max-width: 1200px){
+            .box3{
+                display: block;
+                background-color: violet;
+                width: 800px;
+                height: 800px;
+            }
+            .box3::after{
+                content: "This Screen size for laptop Screen";
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+</body>
+</html>
