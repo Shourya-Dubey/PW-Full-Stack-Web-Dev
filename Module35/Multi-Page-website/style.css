@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* width: 100%; */
+    /* height: 100%; */
+}
+body{
+    width: 80%;
+    /* height: 100vh; */
+    margin: 0 auto;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 15px;
+}
+.nav-links ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.nav-links ul li{
+    list-style: none;
+}
+.nav-links ul a{
+    text-decoration: none;
+    /* color: #20bc7e; */
+    color: black;
+    font-weight: 600;
+}
+.nav-links ul a:hover{
+    text-decoration: underline;
+    color: #20bc7e;
+}
+.hero-section{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 60px 10px;
+    align-items: center;
+}
+.hero-section>.left-content{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 40px;
+    gap: 15px;
+    margin-top: 40px;
+}
+.hero-section>.left-content>h1{
+    font-size: 50px;
+    font-weight: 900;
+}
+.hero-section>.left-content>p{
+    color: #7c7c7c;
+}
+.hero-section>.left-content>button{
+    width: fit-content;
+    padding: 7px 20px;
+    border-radius: 20px;
+    color: white;
+    background-color: #20bc7e;
+    border: #20bc7e;
+    font-weight: 600;
+    font-size: 14px;
+}
+.hero-section>.left-content>#img1 {
+    height: 18px;
+    width: 18px;
+}
+.hero-section>.left-content>#img2{
+ position: relative;
+ left: 100%; 
+ height: 18px;
+ width: 18px;  
+}
+.hero-section>.left-content>.bg-img{
+    position: absolute;
+    z-index: -1;
+    height: 400px;
+    width: 400px;
+    bottom: 8%;
+    left: 29%;
+    
+}
+.hero-section>.right-content{
+    width: 60%;
+    height: 40px;
+    position: relative;
+}
+.hero-section>.right-content>#greenBox{
+    position: absolute;
+    z-index: 1;
+    width: 350px;
+    height: 200px;
+    top: 70px;
+    left: 35%;
+    right: 0;
+    /* width: 35%; */
+    bottom: 30px;
+}
+.hero-section>.right-content>#yellowBox{
+    position: absolute;
+    z-index: 2;
+    /* width: 150px; */
+    height: 150px;
+    top: 160px; 
+    left: 63%;
+    right: 0;
+    width: 30%;
+    bottom: 50px;
+}
+.hero-section>.right-content>#doctor{
+    position: absolute;
+    z-index: 3;
+    height: 420px;
+    width: 420px;
+    top: -90px;
+    left: 30%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
