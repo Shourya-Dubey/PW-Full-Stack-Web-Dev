@@ -4,11 +4,11 @@
     box-sizing: border-box;
     background: #0f0f10;
     color: #ffffff;
-    font-family: "Poppins", sans-serif;  
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;  
 }
 body{
-    margin: 0 auto;
-    max-width: 900px;
+   margin: 0 15vw;
 }
 .navBar{
     display: flex;
@@ -33,4 +33,106 @@ body{
     font-weight: 300;
     font-size: 14px;
     padding: 10px 40px;
+}
+.mainLanding-page{
+    display: flex;
+    align-items: flex-start; 
+    margin-top: 30px;
+    position: relative;
+}
+.mainImg{
+    width: 230px;
+    position: relative;
+    top: -250px;
+    left: 70px;
+}
+.mainDiv{
+    display: flex;
+    flex-direction: column;
+    margin-left: 180px;
+}
+.mainDiv>img{
+    width: 320px;
+    margin-left: 50px;
+}
+.mainDiv h1{
+    font-size: 46px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+.mainDiv h4{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+.mainDiv>p{
+    width: 65%;
+    font-size: 12px;
+    font-weight: 300;
+    color: #bdc0c2;
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+.AddtoBad-Section{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #1e1e21;
+    border-radius: 8px;
+    width: fit-content;
+    padding: 10px 25px;
+}
+.AddtoBad-Section img{
+    width: 15px;
+    background-color: transparent;
+}
+.AddtoBad-Section p{
+    background-color: transparent;
+    margin-bottom: 0px;
+}
+.AddtoBad-Section span{
+    background-color: transparent;
+}
+.socialMedia-logo{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -80px;
+    justify-content: space-around;
+    padding: 0 50px;
+    margin-bottom: 40px;
+}
+.socialMedia-logo img{
+    scale: 0.8;
+}
+.spec{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+.spec-List img{
+    scale: 0.8;
+    margin-bottom: 20px;
+}
+.spec-List{
+    display: flex;
+}
+.spec-list-Item div{
+   margin-bottom: 20px;
+}
+.spec-list-Item div img{
+   scale: 0.8px;
+}
+.spec-list-Item div p{
+   font-size: 12px;
+}
+.spec-list-Item div p:last-child{
+    color: #bdc0c2;
+    font-size: 10px;
+    margin-top: 5px;
+    width: 70%;
+}
+.spec-list-Item div:first-child,
+.spec-list-Item div:last-child{
+    margin-left: 30px;
 }
