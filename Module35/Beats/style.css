@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #0f0f10;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;  
+}
+body{
+    margin: 0 auto;
+    max-width: 900px;
+}
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+.navlinks{
+    display: flex;
+    align-items: center;
+    gap: 33px;
+}
+.navlinks a{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+}
+.navlinks button{
+    background: #1e1e21;
+    border-radius: 8px;
+    font-weight: 300;
+    font-size: 14px;
+    padding: 10px 40px;
+}
