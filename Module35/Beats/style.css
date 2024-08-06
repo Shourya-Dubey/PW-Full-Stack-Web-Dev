@@ -124,11 +124,11 @@ body{
    scale: 0.8px;
 }
 .spec-list-Item div p{
-   font-size: 12px;
+   font-size: 15px;
 }
 .spec-list-Item div p:last-child{
     color: #bdc0c2;
-    font-size: 10px;
+    font-size: 12px;
     margin-top: 5px;
     width: 70%;
 }
