@@ -133,6 +133,6 @@ body{
     width: 70%;
 }
 .spec-list-Item div:first-child,
-.spec-list-Item div:last-child{
-    margin-left: 30px;
+.spec-list-Item div:nth-child(3){
+    margin-left: 35px;
 }
