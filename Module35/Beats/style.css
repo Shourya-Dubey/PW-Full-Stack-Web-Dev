@@ -67,7 +67,7 @@ body{
 }
 .mainDiv>p{
     width: 65%;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 300;
     color: #bdc0c2;
     line-height: 25px;
@@ -135,4 +135,46 @@ body{
 .spec-list-Item div:first-child,
 .spec-list-Item div:nth-child(3){
     margin-left: 35px;
+}
+.case{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.case-item{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.case-item .case-item-logo{
+    scale: 0.8;
+}
+.case-item div{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    width: 20%;
+}
+.case-item div p:first-child{
+    color: #bdc0c2;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+.case-item div p:last-child img{
+    scale: 0.8;
+    background-color: transparent;
+}
+.case-item div p:last-child{
+    width: fit-content;
+    background: #1e1e21;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 12px;
+    padding: 10px 20px; 
 }
