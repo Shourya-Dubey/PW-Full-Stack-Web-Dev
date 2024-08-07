@@ -125,7 +125,20 @@ body{
 .spec-List img{
     scale: 0.8;
     margin-bottom: 20px;
+    animation-name: specImg;
+    /* animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease */
 }
+/* @keyframes specImg {
+    from {
+        scale: 0.2;
+    }
+
+    to {
+        scale: 0.8;
+    }
+} */
 .spec-List{
     display: flex;
 }
@@ -261,6 +274,10 @@ body{
     height: 140px;
     background: #181a1b;
     border-radius: 8px;
+}
+.product-card:hover{
+    scale: 1.05;
+    transition: 0.7s;
 }
 .product-img {
     width: 85px;
