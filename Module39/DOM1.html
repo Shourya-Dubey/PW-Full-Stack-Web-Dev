@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="one"><span>Hey</span>Namaste</p>
+
+    <ul>
+        <li class="tech">One</li>
+        <li class="tech">Two</li>
+        <li class="tech">Three</li>
+    </ul>
+
+    <h4>Hey</h4>
+    <h4>hola</h4>
+
+    <h3 class="classs">hey</h3>
+    <h3 id="idd">hola</h3>
+    <h3>hehe</h3>
+
+    <script>
+        
+        let var1 = document.getElementById("one")
+        // console.log(var1)
+        // console.log(var1.innerText)
+        // console.log(var1.innerHTML)
+
+        let var2 = document.getElementsByClassName("tech")
+        // console.log(var2);
+        // console.log(var2[2].innerText);
+        // var2[1].innerText = "Hello";
+
+        let var3 = document.getElementsByTagName("h4")
+        // console.log(var3)
+        // var3[1].style.color = "red"
+        // var3[1].innerText = "namaste"
+        
+        let var4 = document.querySelector("#idd");
+        console.log(var4);
+        let var5 = document.querySelector(".classs")
+        console.log(var5);
+        var5.className = "hello";
+        var4.classList = "hello hell hel"
+        var4.setAttribute("title","hole")
+        
+    </script>
+</body>
+</html>
