@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>PW Skills</h1>
+    <p id="js"></p>
+    <Button onclick="change()" id="jss">Not Clicked</Button>
+
+    <script>
+        document.addEventListener("click", print)
+        function print(){
+            document.getElementById("js").innerText="Hello EveryOne"
+        }
+
+        function change(){
+            let text = document.querySelector("#jss")
+            text.innerText = "Clicked"
+            text.style.color = "red"
+            text.style.backgroundColor = "yellow"
+            text.style.border = "2px solid green"
+            text.style.padding = "10px 15px"
+        }
+    </script>
+</body>
+</html>
