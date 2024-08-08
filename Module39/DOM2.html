@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>list 1</li>
+        <li>list 2</li>
+        <li>list 3</li>
+    </ul>
+    <script>
+        //Appent Child
+        let title = document.createElement("h1");
+        title.style.fontSize = "30px"
+        title.className = "heading"
+        title.textContent = "PW Skills"
+        document.body.appendChild(title);
+
+        //Remove Child
+        let ul = document.querySelector("ul");
+        console.log(ul);
+        let lists = document.querySelectorAll("li");
+        console.log(lists);
+        for(list of lists){
+            ul.removeChild(list)
+        }
+    </script>
+</body>
+</html>
