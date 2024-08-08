@@ -39,3 +39,12 @@ console.log(emp);
 // Object.seal(emp)
 // emp.id = 50
 // console.log(emp);
+
+
+//Coping an Object
+let a = Object.assign({}, emp)
+console.log(a);
+
+let b = Object.assign({x:12}, a);
+console.log(b);
+
