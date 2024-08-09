@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.counter-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    width: 300px;
+    height: 150px;
+    padding: 8px 15px;
+    gap: 13px;
+}
+.counter-app h3{
+    font-size: 23px;
+}
+.counter{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    font-size: 15px;
+    padding: 3px 8px;
+}
+#reset{
+    padding: 3px 3px;
+    font-size: 15px;
+    text-align: center;
+}
