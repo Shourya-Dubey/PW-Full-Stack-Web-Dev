@@ -8,7 +8,7 @@ const refExThree = /pw/gi
 
 const strToCheck = "PW is growing at a rapid speed and recently they are working on Pwskills to create skills based pwcontent";
 
-const result = refExThree.test(refExThree)
+const result = refExThree.test(strToCheck)
 console.log(result);
 
 const anotherResult = strToCheck.match(refExThree)
