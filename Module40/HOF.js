@@ -49,7 +49,7 @@ const higherOrder = m =>{
 
 
 function oneMoreHello(){
-    console.log("Hello Shourya", Math.random());
+    console.log("Hello Shourya", Math.floor(Math.random()*10));
 }
 
 
