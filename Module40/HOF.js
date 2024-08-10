@@ -33,15 +33,16 @@ const higherOrder = m =>{
 // console.log(higherOrder(2)(3)(4));
 
 
-let myNums = [1,2,3,4,5]
 
-const sumArray = (arr)=>{
-    let total = 0
-    arr.forEach(element=>{
-        total += element
-    })
-    return total
-}
+// let myNums = [1,2,3,4,5]
+
+// const sumArray = (arr)=>{
+//     let total = 0
+//     arr.forEach(element=>{
+//         total += element
+//     })
+//     return total
+// }
 
 // console.log(sumArray(myNums));
 
@@ -51,6 +52,7 @@ function oneMoreHello(){
     console.log("Hello Shourya", Math.random());
 }
 
-// setInterval(oneMoreHello, 1000);
 
-setTimeout(oneMoreHello, 2000)
+setInterval(oneMoreHello, 1000);
+
+// setTimeout(oneMoreHello, 2000)
