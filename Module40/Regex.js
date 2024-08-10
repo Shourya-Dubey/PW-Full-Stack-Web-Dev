@@ -18,7 +18,6 @@ const oneMoreResult = strToCheck.replace(refExThree, 'p-w')
 console.log(oneMoreResult);
 
 
-
 const url = "https://www.google%52address.com"
 const check = url.replace(/%\d\d/gi, "-")
 console.log(check);
