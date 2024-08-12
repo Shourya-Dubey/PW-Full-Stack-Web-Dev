@@ -4,15 +4,20 @@ class product {
     // rating;
 
     constructor(n, p, r){
-       this.name = n;
-       this.price = p;
-       this.rating = r
+        console.log('custom constructor')
+        this.name = n;
+        this.price = p;
+        this.rating = r;
+        
+        // return 10; 
+        // return {x:10, y:20};
     }
 
     display(){
-        console.log("Dislaying Product");
+        console.log('displaying the current product', this.name, this.price, this.rating)
     }
 }
-const p = new product("iPhone", 100000, 5)
-console.log(p);
-p.display()
+
+let p = new product("iPhone", 10000, 5)
+console.log(p)
+// p.display()
