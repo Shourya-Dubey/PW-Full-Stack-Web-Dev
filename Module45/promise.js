@@ -18,3 +18,4 @@ x.then(function f(value){
 })
 console.log('end')
 for(let i = 0; i<1000000000; i++){}
+console.log('loop end')
