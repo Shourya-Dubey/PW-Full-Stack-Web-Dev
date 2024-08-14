@@ -9,6 +9,11 @@ h(10, (n)=>{
 
 console.log('start')
 setTimeout(function set(){
-    console.log('calling setTimeOut');
-},3000)
+    console.log('calling setTimeOut 1')
+},300)
+setTimeout(function set(){
+    console.log('calling setTimeOut 2')
+},0)
+
 console.log('end')
+for(let i = 0; i<100000000; i++){}
