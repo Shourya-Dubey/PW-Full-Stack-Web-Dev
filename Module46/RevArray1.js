@@ -1,5 +1,7 @@
 let names = ['Akash', 'Shourya', 'Arnav', 'Sumit', 'Hitesh']
 console.log(names)
+console.log(typeof names)
+
 console.log('Length of Array -> ', names.length)
 
 console.log(names[names.length - 1])
@@ -18,7 +20,6 @@ console.log(names)
 
 let nameTwo = new Array('Shruti', 'Payal', 'Priya', 'Megha')
 console.log(nameTwo)
-
 
 let alphabets = ['a', 'b', 'c', 'd', 'e']
 alphabets.push('f')
