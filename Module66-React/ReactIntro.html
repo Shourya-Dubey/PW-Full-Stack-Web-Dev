@@ -6,13 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-    Hello
+    <div id="root">
+
+    </div>
 
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 
     <script>
-        React.createElement("Button", {id: btn}, React.createElement("Span", {}, "span"))
+        const Btn = ()=> React.createElement("button", {id: "btn"}, React.createElement("span", {}, "Submit"))
+
+        const rootContainer = document.getElementById("root")
+        const root = ReactDOM.createRoot(rootContainer)
+        root.render(Btn())
     </script>
 
 </body>
