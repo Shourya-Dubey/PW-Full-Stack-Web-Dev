@@ -1,15 +1,17 @@
-export function Image(){
-    return (
-      <img src="https://images.pexels.com/photos/16628553/pexels-photo-16628553/free-photo-of-young-man-on-a-motorcycle-in-city.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" />
-    );
-}
+import Image from "./Image";
+
+// export function Image(props){
+//     return (
+//       <img src= {props.src}/>
+//     );
+// }
 
 
-function DogCard (){
+function DogCard (props){
     return (
       <div>
-        <h3>Bruno</h3>
-        <Image/>
+        <h3>{props.name}</h3>
+        <Image src={props.image}/>
       </div>
     );
 }
