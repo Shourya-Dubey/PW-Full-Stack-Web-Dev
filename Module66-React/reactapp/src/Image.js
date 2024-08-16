@@ -1,6 +1,8 @@
 function Image(props) {
   return (
-    <img src= {props.src}/>
+    <div className="img-box">
+      <img src={props.src} />
+    </div>
   );
 }
 
