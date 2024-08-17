@@ -7,13 +7,13 @@ function App() {
       Hello
       <DogCard1
         name="Shourya"
-        image="https://www.pexels.com/photo/blocks-of-flats-in-city-25823790/"
+        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAnI33utT_AfatFvwqr9LLt599wJoIriqyIw&s"
       />
       <DogCard1
         name="Akash"
-        image="https://www.pexels.com/photo/flower-and-agate-flat-lay-with-delicate-petals-27495825/"
+        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW7zpG7Q2QGK9YGchMgfbXycRtDimjSCjk8w&s"
       />
-      <Image image="https://www.pexels.com/photo/view-of-a-rocking-chair-and-antique-items-in-a-room-with-large-windows-14499730/" />
+      <Image image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLm-r3QBCn15pn9zz68VFG1Bw2keUrwZ7WueGL4rQuA2TQpQA9jOrEt4nDisDresZIMIM&usqp=CAU" />
     </>
   );
 }
