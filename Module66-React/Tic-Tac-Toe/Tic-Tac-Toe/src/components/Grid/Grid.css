@@ -1,0 +1,10 @@
+.grid{
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid yellow;
+    overflow: hidden;
+}
