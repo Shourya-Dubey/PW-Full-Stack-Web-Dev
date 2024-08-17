@@ -8,6 +8,7 @@ function Counter(){
     const[y, setY] = useState(0);
     const[a, setA] = useState(0);
     const[isEditting, setIsEditting] = useState(false);
+    const[todos, setTodo] = useState(['todo1', 'todo2']);
 
     return (
       <>
@@ -27,23 +28,33 @@ function Counter(){
           zDecrement
         </button>
         <br />
+
         count x : {x}
         <button onClick={() => setX(x + 1)}>Increment</button>
         <button onClick={() => setX(x - 1)}>Decrement</button>
         <br />
+
         count y : {y}
         <button onClick={() => setY(y + 1)}>Increment</button>
         <button onClick={() => setY(y - 1)}>Decrement</button>
         <br />
+
         count A: {a} is {a % 2 == 0 ? "Even" : "Odd"}
         <button onClick={() => setA(a + 1)}>Increment</button>
         <button onClick={() => setA(a - 1)}>Decrement</button>
-        <br/>
+        <br />
 
-        {
-         isEditting ? <input /> : <p>Shourya Dubey</p>
-        }
+        {isEditting ? <input /> : <p>Shourya Dubey</p>}
         <button onClick={() => setIsEditting(!isEditting)}>Click</button>
+        <br />
+        <br />
+
+        <ul>
+           {
+            todos.map((todo)=><li>{todo}</li>)
+           }
+          <button onClick={() => setTodo([...todos, "newTodo"])}>Todo</button>
+        </ul>
       </>
     );
 }
