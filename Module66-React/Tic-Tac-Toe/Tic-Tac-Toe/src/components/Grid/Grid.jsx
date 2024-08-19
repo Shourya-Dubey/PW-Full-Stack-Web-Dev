@@ -19,30 +19,31 @@ function Grid({numberOfCards}){
         const win = isWinner(board, turn? 'O': 'X');
         if(win){
             setWinner(win)
-        }setBoard([...board]);
+        }
+        setBoard([...board]);
         setTurn(!true)
     }
 
     function reset(){
         setTurn(true)
         winner(null)
-        setBoard(Array(numberOfCards).fill(" "))
+        setBoard(Array(numberOfCards).fill(""))
     }
     return (
       <div className="grid-wrapper">
         {winner && (
           <>
-            <h1 style={{color:'green'}}>Winner is {winner}</h1>
+            <h1 className="turn-highlight">Winner is {winner}</h1>
             <button className="reset" onClick={reset}>
               Reset Game
             </button>
           </>
         )}
-        <h1 className="turn-highlight" style={{color:'red'}}>Curren turn: {(turn) ? "O" : "X"}</h1>
+        <h1 className="turn-highlight">Curren turn:{(turn) ? "O" : "X"}</h1>
         <div className="grid">
-          {board.map((el, idx) => (
-            <Card key={idx} onPlay={play} player={el} index={idx} />
-          ))}
+          {board.map((el, idx) =>
+            <Card gameEnd={winner ? true : false} key={idx} onPlay={play} player={el} index={idx} />
+          )}
         </div>
       </div>
     );
