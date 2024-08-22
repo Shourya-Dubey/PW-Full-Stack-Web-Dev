@@ -1,6 +1,8 @@
 .search-wrappera{
-    width: 500px;
+    margin: 0 auto;
 }
 #pokename-name-search{
-    width: 100px;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    width: 600px;
 }
