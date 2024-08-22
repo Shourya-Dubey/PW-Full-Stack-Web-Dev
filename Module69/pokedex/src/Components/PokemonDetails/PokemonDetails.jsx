@@ -24,8 +24,7 @@ function PokemonDetails(){
 
         return (
           <div className="pokemon-details-wrapper">
-            <div className="pokemon-details-name"><span>{pokemon.name}</span>
-            </div>
+            <div className="pokemon-details-name"><span>{pokemon.name}</span></div>
             <img className="pokemon-details-image" src={pokemon.image} />
             <div>Height: {pokemon.height}</div>
             <div>Weight: {pokemon.weight}</div>
