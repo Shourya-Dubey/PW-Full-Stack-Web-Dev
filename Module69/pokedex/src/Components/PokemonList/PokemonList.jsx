@@ -15,13 +15,16 @@ function PokemonList(){
 
     async function downloadPokemon() {
         setIsLoading(true)
+
         const respone = await axios.get(pokedexUrl);
         const pokemonResults = respone.data.results
         console.log(respone.data)
+
         setNextUrl(respone.data.next)
         setPrevUrl(respone.data.previous)
         const pokemonResultPromise = pokemonResults.map((pokemon)=> axios.get(pokemon.url))
         const pokemonData = await axios.all(pokemonResultPromise);
+
         console.log(pokemonData);
 
         const res = pokemonData.map((pokeData) => {
@@ -50,7 +53,7 @@ function PokemonList(){
           {isLoading
             ? "Loading..."
             : pokemonList.map((p) => (
-                <Pokemon name={p.name} image={p.image} key={p.id} />
+                <Pokemon name={p.name} image={p.image} key={p.id} id={p.id}/>
               ))}
         </div>
         <div className="controls">
