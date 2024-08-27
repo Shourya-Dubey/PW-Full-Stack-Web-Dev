@@ -12,3 +12,4 @@ console.log(values);
 let entries = Object.entries(obj);
 console.log(entries);
 console.log(entries[1][0]);
+console.log(Object.entries(obj));
