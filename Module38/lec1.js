@@ -6,6 +6,7 @@ console.log(b);
 
 let c = new Array(5);
 console.log(c);
+console.log(typeof(c));
 
 console.log(a[1]);
 a[3] = 5;

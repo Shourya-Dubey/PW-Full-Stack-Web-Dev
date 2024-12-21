@@ -2,11 +2,11 @@ const button = document.getElementById("button")
 
 let RandomColor = () =>{
     let val = "0123456789ABCDEF"
-    let symbol = "#"
+    let cons = "#"
     for(let i = 0; i<6; i++){
-        symbol = symbol + val[Math.floor(Math.random()*16)]
+        cons = cons + val[Math.floor(Math.random()*16)]
     }
-    return symbol
+    return cons
 }
 
 function colorChange() {

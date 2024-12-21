@@ -28,4 +28,3 @@ console.log(name.indexOf("o"));
 console.log(name.slice(1,4));
 
 // splice
-

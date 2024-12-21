@@ -12,5 +12,5 @@ console.log(msg);
 function textMessage(){
     return "Today is Wednesday";
 }
-let newMessage = msg + textMessage();
+let newMessage = msg + `${" "}` + textMessage();
 console.log(newMessage);
