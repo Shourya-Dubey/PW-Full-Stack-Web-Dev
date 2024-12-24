@@ -3,11 +3,12 @@ class product {
   // price;
   // rating;
 
+  #rating;
   constructor(n, p, r) {
     console.log("custom constructor");
     this.name = n;
     this.price = p;
-    this.rating = r;
+    this.#rating = r;
   }
 
   static custom(){
@@ -19,11 +20,12 @@ class product {
       "displaying the current product",
       this.name,
       this.price,
-      this.rating
+      this.#rating
     );
   }
 }
 
 let p = new product("iPhone", 10000, 5);
 console.log(p)
+p.display()
 product.custom()
