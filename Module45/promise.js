@@ -3,7 +3,7 @@ function createPromise(){
         setTimeout(() => {
            console.log('inside setTimeOut');
            resolve('done')
-        }, 500);
+        }, 5000);
     })
 }
 
@@ -17,5 +17,5 @@ x.then(function f(value){
     console.log('finally')
 })
 console.log('end')
-for(let i = 0; i<1000000000; i++){}
+for(let i = 0; i<2000000000; i++){}
 console.log('loop end')

@@ -7,7 +7,7 @@ class product {
         this.rating = r
     }
     display(){
-        console.log('displaying current product -> ', this.name, this.price, this.rating);
+        console.log('displaying current product -> ', this.#name, this.price, this.rating);
     }
 }
 
